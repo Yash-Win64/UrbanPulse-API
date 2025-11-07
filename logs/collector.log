@@ -1,0 +1,978 @@
+2025-11-01 16:54:53,348 | INFO | Auto collector started (interval: 15.0 min)
+2025-11-01 16:54:53,348 | INFO | Background data collector thread launched.
+2025-11-01 16:54:53,349 | INFO | Collecting all data at 2025-11-01 16:54:53
+2025-11-01 16:54:54,342 | INFO | Traffic stored | (12.9716, 77.5946)
+2025-11-01 16:54:54,755 | INFO | Weather stored | Bangalore: 27.93°C, 52% RH
+2025-11-01 16:54:55,609 | ERROR | Air Quality data collection failed: 'sulphur_dioxide' is an invalid keyword argument for AirQualityData
+2025-11-01 16:54:55,609 | INFO | Data collection cycle complete.
+
+2025-11-01 16:54:55,610 | INFO | Sleeping for 900 seconds...
+
+2025-11-01 16:55:26,249 | INFO | Collector stopped manually.
+2025-11-01 16:55:29,607 | INFO | Auto collector started (interval: 15.0 min)
+2025-11-01 16:55:29,607 | INFO | Background data collector thread launched.
+2025-11-01 16:55:29,607 | INFO | Collecting all data at 2025-11-01 16:55:29
+2025-11-01 16:55:30,990 | INFO | Traffic stored | (12.9716, 77.5946)
+2025-11-01 16:55:31,391 | INFO | Weather stored | Bangalore: 27.93°C, 52% RH
+2025-11-01 16:55:32,371 | ERROR | Air Quality data collection failed: 'so2' is an invalid keyword argument for AirQualityData
+2025-11-01 16:55:32,371 | INFO | Data collection cycle complete.
+
+2025-11-01 16:55:32,371 | INFO | Sleeping for 900 seconds...
+
+2025-11-01 16:56:22,826 | INFO | Collector stopped manually.
+2025-11-01 16:56:26,181 | INFO | Auto collector started (interval: 15.0 min)
+2025-11-01 16:56:26,181 | INFO | Background data collector thread launched.
+2025-11-01 16:56:26,181 | INFO | Collecting all data at 2025-11-01 16:56:26
+2025-11-01 16:56:27,699 | INFO | Traffic stored | (12.9716, 77.5946)
+2025-11-01 16:56:28,189 | INFO | Weather stored | Bangalore: 27.93°C, 52% RH
+2025-11-01 16:56:28,997 | ERROR | Air Quality data collection failed: 'dust' is an invalid keyword argument for AirQualityData
+2025-11-01 16:56:28,997 | INFO | Data collection cycle complete.
+
+2025-11-01 16:56:28,998 | INFO | Sleeping for 900 seconds...
+
+2025-11-01 16:56:39,170 | INFO | Collector stopped manually.
+2025-11-01 16:56:42,157 | INFO | Auto collector started (interval: 15.0 min)
+2025-11-01 16:56:42,157 | INFO | Background data collector thread launched.
+2025-11-01 16:56:42,158 | INFO | Collecting all data at 2025-11-01 16:56:42
+2025-11-01 16:56:43,387 | INFO | Traffic stored | (12.9716, 77.5946)
+2025-11-01 16:56:43,820 | INFO | Weather stored | Bangalore: 27.93°C, 52% RH
+2025-11-01 16:56:44,759 | INFO | Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 16:56:44,760 | INFO | Data collection cycle complete.
+
+2025-11-01 16:56:44,762 | INFO | Sleeping for 900 seconds...
+
+2025-11-01 16:58:48,858 | INFO | Collector stopped manually.
+2025-11-01 16:58:51,781 | INFO | Auto collector started (interval: 15.0 min)
+2025-11-01 16:58:51,781 | INFO | Background data collector thread launched.
+2025-11-01 16:58:51,782 | INFO | Collecting all data at 2025-11-01 16:58:51
+2025-11-01 16:58:51,782 | ERROR | Unhandled collector error: name 'SessionLocal' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Downloads\UrbanPulse-API-fixed\app\services\data_collector.py", line 141, in run_scheduler
+    collect_all_data()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\Downloads\UrbanPulse-API-fixed\app\services\data_collector.py", line 32, in collect_all_data
+    db = SessionLocal()
+         ^^^^^^^^^^^^
+NameError: name 'SessionLocal' is not defined
+2025-11-01 16:58:51,786 | INFO | Sleeping for 900 seconds...
+
+2025-11-01 16:59:04,977 | INFO | Collector stopped manually.
+2025-11-01 16:59:07,601 | INFO | Auto collector started (interval: 15.0 min)
+2025-11-01 16:59:07,601 | INFO | Background data collector thread launched.
+2025-11-01 16:59:07,601 | INFO | Collecting all data at 2025-11-01 16:59:07
+2025-11-01 16:59:09,019 | INFO | Traffic stored | (12.9716, 77.5946)
+2025-11-01 16:59:09,447 | INFO | Weather stored | Bangalore: 27.93°C, 53% RH
+2025-11-01 16:59:10,573 | INFO | Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 16:59:10,573 | INFO | Data collection cycle complete.
+
+2025-11-01 16:59:10,575 | INFO | Sleeping for 900 seconds...
+
+2025-11-01 17:06:11,066 | INFO | Collector stopped manually.
+2025-11-01 17:06:14,083 | INFO | Auto collector started (interval: 10.0 min)
+2025-11-01 17:06:14,083 | INFO | Background data collector thread launched.
+2025-11-01 17:06:14,084 | INFO | Collecting all data at 2025-11-01 17:06:14
+2025-11-01 17:06:15,432 | INFO | Traffic stored | (12.9716, 77.5946)
+2025-11-01 17:06:15,884 | INFO | Weather stored | Bangalore: 27.44°C, 56% RH
+2025-11-01 17:06:16,712 | INFO | Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 17:06:16,712 | INFO | Data collection cycle complete.
+
+2025-11-01 17:06:16,714 | INFO | Sleeping for 600 seconds...
+
+2025-11-01 17:16:18,546 | INFO | Collecting all data at 2025-11-01 17:16:18
+2025-11-01 17:16:20,122 | INFO | Traffic stored | (12.9716, 77.5946)
+2025-11-01 17:16:20,551 | INFO | Weather stored | Bangalore: 27.8°C, 54% RH
+2025-11-01 17:16:21,452 | INFO | Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 17:16:21,452 | INFO | Data collection cycle complete.
+
+2025-11-01 17:16:21,453 | INFO | Sleeping for 600 seconds...
+
+2025-11-01 17:34:01,573 | INFO | Collecting all data at 2025-11-01 17:34:01
+2025-11-01 17:34:01,655 | ERROR | Traffic data collection failed: HTTPSConnectionPool(host='api.tomtom.com', port=443): Max retries exceeded with url: /traffic/services/4/flowSegmentData/absolute/10/json?point=12.9716,77.5946&unit=KMPH&key=9AJSHZwsSKPHm9yFsCmmUrn6FFLUDgUh (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001B4E0682C10>: Failed to resolve 'api.tomtom.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-01 17:34:01,667 | ERROR | Weather data collection failed: HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?q=Bangalore&units=metric&appid=de06e1267ed99ce53c8d5eba93de638a (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001B4E0682210>: Failed to resolve 'api.openweathermap.org' ([Errno 11001] getaddrinfo failed)"))
+2025-11-01 17:34:01,670 | ERROR | Air Quality data collection failed: HTTPSConnectionPool(host='air-quality-api.open-meteo.com', port=443): Max retries exceeded with url: /v1/air-quality?latitude=12.9719&longitude=77.5937&hourly=pm10,pm2_5,carbon_monoxide,carbon_dioxide,nitrogen_dioxide,sulphur_dioxide,ozone,dust&timezone=auto&forecast_days=1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001B4E06834D0>: Failed to resolve 'air-quality-api.open-meteo.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-01 17:34:01,671 | INFO | Data collection cycle complete.
+
+2025-11-01 17:34:01,672 | INFO | Sleeping for 600 seconds...
+
+2025-11-01 18:15:13,810 | INFO | Collecting all data at 2025-11-01 18:15:13
+2025-11-01 18:15:13,884 | ERROR | Traffic data collection failed: HTTPSConnectionPool(host='api.tomtom.com', port=443): Max retries exceeded with url: /traffic/services/4/flowSegmentData/absolute/10/json?point=12.9716,77.5946&unit=KMPH&key=9AJSHZwsSKPHm9yFsCmmUrn6FFLUDgUh (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001B4E0682FD0>: Failed to resolve 'api.tomtom.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-01 18:15:13,914 | ERROR | Weather data collection failed: HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?q=Bangalore&units=metric&appid=de06e1267ed99ce53c8d5eba93de638a (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001B4E06811D0>: Failed to resolve 'api.openweathermap.org' ([Errno 11001] getaddrinfo failed)"))
+2025-11-01 18:15:13,939 | ERROR | Air Quality data collection failed: HTTPSConnectionPool(host='air-quality-api.open-meteo.com', port=443): Max retries exceeded with url: /v1/air-quality?latitude=12.9719&longitude=77.5937&hourly=pm10,pm2_5,carbon_monoxide,carbon_dioxide,nitrogen_dioxide,sulphur_dioxide,ozone,dust&timezone=auto&forecast_days=1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001B4E0683C50>: Failed to resolve 'air-quality-api.open-meteo.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-01 18:15:13,955 | INFO | Data collection cycle complete.
+
+2025-11-01 18:15:13,955 | INFO | Sleeping for 600 seconds...
+
+2025-11-01 18:23:41,356 | INFO | Collector stopped manually.
+2025-11-01 18:29:39,017 | INFO | Auto collector started (interval: 10.0 min)
+2025-11-01 18:29:39,017 | INFO | Background data collector thread launched.
+2025-11-01 18:29:39,017 | INFO | Collecting all data at 2025-11-01 18:29:39
+2025-11-01 18:29:40,215 | ERROR | Traffic data collection failed: 403 Client Error: Forbidden for url: https://api.tomtom.com/traffic/services/4/flowSegmentData/absolute/10/json?point=12.9716,77.5946&unit=KMPH&key=your_tomtom_key
+2025-11-01 18:29:40,215 | ERROR | Weather data collection failed: name 'CITY' is not defined
+2025-11-01 18:29:40,215 | ERROR | Air Quality data collection failed: name 'OPEN_METEO_URL' is not defined
+2025-11-01 18:29:40,216 | INFO | Data collection cycle complete.
+
+2025-11-01 18:29:40,217 | INFO | Sleeping for 600 seconds...
+
+2025-11-01 18:29:50,133 | INFO | Collector stopped manually.
+2025-11-01 18:30:02,625 | INFO | Auto collector started (interval: 10.0 min)
+2025-11-01 18:30:02,625 | INFO | Background data collector thread launched.
+2025-11-01 18:30:02,625 | INFO | Collecting all data at 2025-11-01 18:30:02
+2025-11-01 18:30:03,419 | ERROR | Traffic data collection failed: 403 Client Error: Forbidden for url: https://api.tomtom.com/traffic/services/4/flowSegmentData/absolute/10/json?point=12.9716,77.5946&unit=KMPH&key=your_tomtom_key
+2025-11-01 18:30:03,420 | ERROR | Weather data collection failed: name 'CITY' is not defined
+2025-11-01 18:30:03,420 | ERROR | Air Quality data collection failed: name 'OPEN_METEO_URL' is not defined
+2025-11-01 18:30:03,420 | INFO | Data collection cycle complete.
+
+2025-11-01 18:30:03,421 | INFO | Sleeping for 600 seconds...
+
+2025-11-01 18:30:07,267 | INFO | Collector stopped manually.
+2025-11-01 18:35:17,031 | INFO | 🚀 Auto collector started (interval: 10.0 min)
+2025-11-01 18:35:17,031 | INFO | 🧠 Background data collector thread launched.
+2025-11-01 18:35:17,032 | INFO | Collecting all data at 2025-11-01 18:35:17
+2025-11-01 18:35:18,184 | ERROR | ❌ Traffic data collection failed: 403 Client Error: Forbidden for url: https://api.tomtom.com/traffic/services/4/flowSegmentData/absolute/10/json?point=12.9716,77.5946&unit=KMPH&key=your_tomtom_key
+2025-11-01 18:35:18,672 | ERROR | ❌ Weather data collection failed: 401 Client Error: Unauthorized for url: https://api.openweathermap.org/data/2.5/weather?q=Bangalore&units=metric&appid=your_openweather_key
+2025-11-01 18:35:19,498 | INFO | ✅ Air Quality stored | Bangalore: AQI=60.3
+2025-11-01 18:35:19,498 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:35:19,500 | INFO | ⏳ Sleeping for 600 seconds...
+
+2025-11-01 18:35:25,694 | INFO | 🛑 Collector stopped manually.
+2025-11-01 18:38:02,734 | INFO | 🚀 Auto collector started (interval: 10.0 min)
+2025-11-01 18:38:02,735 | INFO | 🧠 Background data collector thread launched.
+2025-11-01 18:38:02,735 | INFO | Collecting all data at 2025-11-01 18:38:02
+2025-11-01 18:38:03,979 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:38:04,437 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:38:05,244 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:38:05,245 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:38:05,246 | INFO | ⏳ Sleeping for 600 seconds...
+
+2025-11-01 18:47:31,048 | INFO | 🛑 Collector stopped manually.
+2025-11-01 18:54:38,471 | INFO | 🚀 Auto collector started (interval: 0.1 min)
+2025-11-01 18:54:38,471 | INFO | 🧠 Background data collector thread launched.
+2025-11-01 18:54:38,471 | INFO | Collecting all data at 2025-11-01 18:54:38
+2025-11-01 18:54:39,640 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:54:40,115 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:54:41,036 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:54:41,036 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:54:41,037 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:54:49,038 | INFO | Collecting all data at 2025-11-01 18:54:49
+2025-11-01 18:54:49,841 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:54:50,260 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:54:51,010 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:54:51,011 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:54:51,012 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:54:59,013 | INFO | Collecting all data at 2025-11-01 18:54:59
+2025-11-01 18:54:59,828 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:55:00,224 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:55:01,002 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:55:01,002 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:55:01,004 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:55:09,005 | INFO | Collecting all data at 2025-11-01 18:55:09
+2025-11-01 18:55:09,799 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:55:10,232 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:55:11,005 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:55:11,005 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:55:11,007 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:55:19,007 | INFO | Collecting all data at 2025-11-01 18:55:19
+2025-11-01 18:55:19,785 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:55:20,193 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:55:20,935 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:55:20,936 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:55:20,937 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:55:28,938 | INFO | Collecting all data at 2025-11-01 18:55:28
+2025-11-01 18:55:29,666 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:55:30,092 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:55:30,835 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:55:30,836 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:55:30,837 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:55:38,838 | INFO | Collecting all data at 2025-11-01 18:55:38
+2025-11-01 18:55:39,630 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:55:40,067 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:55:40,819 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:55:40,820 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:55:40,821 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:55:48,822 | INFO | Collecting all data at 2025-11-01 18:55:48
+2025-11-01 18:55:49,761 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:55:50,150 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:55:50,904 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:55:50,905 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:55:50,906 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:55:58,906 | INFO | Collecting all data at 2025-11-01 18:55:58
+2025-11-01 18:55:59,716 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:56:00,140 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:56:00,912 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:56:00,912 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:56:00,914 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:56:08,914 | INFO | Collecting all data at 2025-11-01 18:56:08
+2025-11-01 18:56:09,726 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:56:10,340 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:56:11,080 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:56:11,080 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:56:11,082 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:56:19,082 | INFO | Collecting all data at 2025-11-01 18:56:19
+2025-11-01 18:56:20,003 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:56:20,616 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:56:21,402 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:56:21,403 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:56:21,405 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:56:29,405 | INFO | Collecting all data at 2025-11-01 18:56:29
+2025-11-01 18:56:30,216 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:56:30,796 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:56:32,319 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:56:32,319 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:56:32,320 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:56:40,321 | INFO | Collecting all data at 2025-11-01 18:56:40
+2025-11-01 18:56:41,150 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:56:41,610 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:56:42,362 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:56:42,363 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:56:42,364 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:56:50,364 | INFO | Collecting all data at 2025-11-01 18:56:50
+2025-11-01 18:56:51,473 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:56:51,879 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:56:52,653 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:56:52,654 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:56:52,656 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:57:00,657 | INFO | Collecting all data at 2025-11-01 18:57:00
+2025-11-01 18:57:01,479 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:57:01,910 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:57:02,654 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:57:02,655 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:57:02,658 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:57:10,659 | INFO | Collecting all data at 2025-11-01 18:57:10
+2025-11-01 18:57:11,444 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:57:11,916 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:57:12,716 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:57:12,716 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:57:12,717 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:57:20,718 | INFO | Collecting all data at 2025-11-01 18:57:20
+2025-11-01 18:57:21,517 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:57:21,950 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:57:22,710 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:57:22,710 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:57:22,712 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:57:30,713 | INFO | Collecting all data at 2025-11-01 18:57:30
+2025-11-01 18:57:31,527 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:57:31,992 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:57:32,761 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:57:32,762 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:57:32,764 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:57:40,765 | INFO | Collecting all data at 2025-11-01 18:57:40
+2025-11-01 18:57:41,624 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:57:42,065 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:57:42,857 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:57:42,858 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:57:42,861 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:57:50,862 | INFO | Collecting all data at 2025-11-01 18:57:50
+2025-11-01 18:57:51,665 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:57:52,067 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:57:52,839 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:57:52,839 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:57:52,841 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:58:00,842 | INFO | Collecting all data at 2025-11-01 18:58:00
+2025-11-01 18:58:01,755 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:58:02,161 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:58:02,960 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:58:02,960 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:58:02,962 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:58:10,962 | INFO | Collecting all data at 2025-11-01 18:58:10
+2025-11-01 18:58:11,753 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:58:12,217 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:58:13,018 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:58:13,018 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:58:13,020 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:58:21,021 | INFO | Collecting all data at 2025-11-01 18:58:21
+2025-11-01 18:58:21,927 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:58:22,340 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:58:23,113 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:58:23,114 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:58:23,115 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:58:31,115 | INFO | Collecting all data at 2025-11-01 18:58:31
+2025-11-01 18:58:31,893 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:58:32,313 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:58:33,083 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:58:33,083 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:58:33,084 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:58:41,085 | INFO | Collecting all data at 2025-11-01 18:58:41
+2025-11-01 18:58:41,926 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:58:42,353 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:58:43,156 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:58:43,157 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:58:43,158 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:58:51,159 | INFO | Collecting all data at 2025-11-01 18:58:51
+2025-11-01 18:58:52,088 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:58:52,497 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:58:53,223 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:58:53,223 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:58:53,224 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:59:01,225 | INFO | Collecting all data at 2025-11-01 18:59:01
+2025-11-01 18:59:01,989 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:59:02,415 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:59:03,186 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:59:03,186 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:59:03,187 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:59:11,188 | INFO | Collecting all data at 2025-11-01 18:59:11
+2025-11-01 18:59:12,161 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:59:12,610 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:59:13,330 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:59:13,330 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:59:13,331 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:59:21,332 | INFO | Collecting all data at 2025-11-01 18:59:21
+2025-11-01 18:59:22,122 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:59:22,549 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:59:23,281 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:59:23,282 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:59:23,283 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:59:31,284 | INFO | Collecting all data at 2025-11-01 18:59:31
+2025-11-01 18:59:32,105 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:59:32,545 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:59:33,326 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:59:33,326 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:59:33,328 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:59:41,329 | INFO | Collecting all data at 2025-11-01 18:59:41
+2025-11-01 18:59:42,104 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:59:42,558 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:59:43,489 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:59:43,489 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:59:43,491 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 18:59:51,492 | INFO | Collecting all data at 2025-11-01 18:59:51
+2025-11-01 18:59:52,303 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 18:59:52,723 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 18:59:53,499 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 18:59:53,499 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 18:59:53,500 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 19:00:01,501 | INFO | Collecting all data at 2025-11-01 19:00:01
+2025-11-01 19:00:02,395 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 19:00:03,381 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 19:00:04,256 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 19:00:04,256 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 19:00:04,257 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 19:00:12,258 | INFO | Collecting all data at 2025-11-01 19:00:12
+2025-11-01 19:00:13,170 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 19:00:13,648 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 19:00:14,602 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 19:00:14,602 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 19:00:14,604 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 19:00:22,605 | INFO | Collecting all data at 2025-11-01 19:00:22
+2025-11-01 19:00:23,414 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 19:00:23,888 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 19:00:24,630 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 19:00:24,631 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 19:00:24,633 | INFO | ⏳ Sleeping for 8.0 seconds...
+
+2025-11-01 19:00:32,633 | INFO | Collecting all data at 2025-11-01 19:00:32
+2025-11-01 19:00:33,424 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 19:00:33,850 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 19:00:34,161 | INFO | 🛑 Collector stopped manually.
+2025-11-01 19:03:08,675 | INFO | 🚀 Auto collector started (interval: 6.8 min)
+2025-11-01 19:03:08,675 | INFO | 🧠 Background data collector thread launched.
+2025-11-01 19:03:08,675 | INFO | Collecting all data at 2025-11-01 19:03:08
+2025-11-01 19:03:09,524 | INFO | ✅ Traffic stored | (12.9716, 77.5946)
+2025-11-01 19:03:09,937 | INFO | ✅ Weather stored | Bangalore: 24.8°C, 65% RH
+2025-11-01 19:03:10,681 | INFO | ✅ Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 19:03:10,681 | INFO | ✅ Data collection cycle complete.
+
+2025-11-01 19:03:10,682 | INFO | ⏳ Sleeping for 410.0 seconds...
+
+2025-11-01 19:03:19,291 | INFO | 🛑 Collector stopped manually.
+2025-11-01 19:11:52,908 | INFO | Auto collector started (interval: 410.0 seconds)
+2025-11-01 19:11:52,908 | INFO | Background collector thread launched.
+2025-11-01 19:11:52,908 | INFO | Collecting all data at 2025-11-01 13:41:52 UTC
+2025-11-01 19:11:54,033 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-01 19:11:54,444 | INFO | Weather stored | Bangalore: 24.82°C, 64%
+2025-11-01 19:11:55,376 | INFO | Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 19:11:55,376 | INFO | Data collection cycle complete.
+2025-11-01 19:11:55,377 | INFO | Sleeping for 410.0 seconds...
+2025-11-01 19:18:45,378 | INFO | Collecting all data at 2025-11-01 13:48:45 UTC
+2025-11-01 19:18:46,623 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-01 19:18:47,120 | INFO | Weather stored | Bangalore: 25.01°C, 58%
+2025-11-01 19:18:47,908 | INFO | Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 19:18:47,908 | INFO | Data collection cycle complete.
+2025-11-01 19:18:47,909 | INFO | Sleeping for 410.0 seconds...
+2025-11-01 19:25:37,910 | INFO | Collecting all data at 2025-11-01 13:55:37 UTC
+2025-11-01 19:25:39,042 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-01 19:25:39,492 | INFO | Weather stored | Bangalore: 24.31°C, 65%
+2025-11-01 19:25:40,422 | INFO | Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 19:25:40,423 | INFO | Data collection cycle complete.
+2025-11-01 19:25:40,424 | INFO | Sleeping for 410.0 seconds...
+2025-11-01 19:32:30,426 | INFO | Collecting all data at 2025-11-01 14:02:30 UTC
+2025-11-01 19:32:31,577 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-01 19:32:31,982 | INFO | Weather stored | Bangalore: 24.31°C, 65%
+2025-11-01 19:32:32,788 | INFO | Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 19:32:32,788 | INFO | Data collection cycle complete.
+2025-11-01 19:32:32,790 | INFO | Sleeping for 410.0 seconds...
+2025-11-01 19:39:22,791 | INFO | Collecting all data at 2025-11-01 14:09:22 UTC
+2025-11-01 19:39:23,742 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-01 19:39:24,224 | INFO | Weather stored | Bangalore: 24.31°C, 65%
+2025-11-01 19:39:25,266 | INFO | Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 19:39:25,266 | INFO | Data collection cycle complete.
+2025-11-01 19:39:25,267 | INFO | Sleeping for 410.0 seconds...
+2025-11-01 19:46:15,268 | INFO | Collecting all data at 2025-11-01 14:16:15 UTC
+2025-11-01 19:46:16,363 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-01 19:46:16,735 | INFO | Weather stored | Bangalore: 24.31°C, 65%
+2025-11-01 19:46:17,639 | INFO | Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 19:46:17,640 | INFO | Data collection cycle complete.
+2025-11-01 19:46:17,641 | INFO | Sleeping for 410.0 seconds...
+2025-11-01 19:53:07,642 | INFO | Collecting all data at 2025-11-01 14:23:07 UTC
+2025-11-01 19:53:08,545 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-01 19:53:08,991 | INFO | Weather stored | Bangalore: 23.92°C, 66%
+2025-11-01 19:53:09,740 | INFO | Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 19:53:09,741 | INFO | Data collection cycle complete.
+2025-11-01 19:53:09,742 | INFO | Sleeping for 410.0 seconds...
+2025-11-01 19:59:59,743 | INFO | Collecting all data at 2025-11-01 14:29:59 UTC
+2025-11-01 20:00:00,938 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-01 20:00:01,434 | INFO | Weather stored | Bangalore: 23.92°C, 66%
+2025-11-01 20:00:02,402 | INFO | Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 20:00:02,402 | INFO | Data collection cycle complete.
+2025-11-01 20:00:02,405 | INFO | Sleeping for 410.0 seconds...
+2025-11-01 20:06:52,406 | INFO | Collecting all data at 2025-11-01 14:36:52 UTC
+2025-11-01 20:06:53,503 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-01 20:06:53,927 | INFO | Weather stored | Bangalore: 24.42°C, 64%
+2025-11-01 20:06:54,800 | INFO | Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 20:06:54,800 | INFO | Data collection cycle complete.
+2025-11-01 20:06:54,802 | INFO | Sleeping for 410.0 seconds...
+2025-11-01 20:13:44,803 | INFO | Collecting all data at 2025-11-01 14:43:44 UTC
+2025-11-01 20:13:45,981 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-01 20:13:46,402 | INFO | Weather stored | Bangalore: 23.69°C, 65%
+2025-11-01 20:13:47,344 | INFO | Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 20:13:47,344 | INFO | Data collection cycle complete.
+2025-11-01 20:13:47,345 | INFO | Sleeping for 410.0 seconds...
+2025-11-01 20:20:37,346 | INFO | Collecting all data at 2025-11-01 14:50:37 UTC
+2025-11-01 20:20:38,434 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-01 20:20:38,847 | INFO | Weather stored | Bangalore: 23.69°C, 65%
+2025-11-01 20:20:39,629 | INFO | Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 20:20:39,630 | INFO | Data collection cycle complete.
+2025-11-01 20:20:39,631 | INFO | Sleeping for 410.0 seconds...
+2025-11-01 20:27:29,632 | INFO | Collecting all data at 2025-11-01 14:57:29 UTC
+2025-11-01 20:27:30,510 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-01 20:27:30,921 | INFO | Weather stored | Bangalore: 23.8°C, 67%
+2025-11-01 20:27:31,832 | INFO | Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 20:27:31,832 | INFO | Data collection cycle complete.
+2025-11-01 20:27:31,833 | INFO | Sleeping for 410.0 seconds...
+2025-11-01 20:34:21,834 | INFO | Collecting all data at 2025-11-01 15:04:21 UTC
+2025-11-01 20:34:22,956 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-01 20:34:23,440 | INFO | Weather stored | Bangalore: 23.71°C, 67%
+2025-11-01 20:34:24,600 | INFO | Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 20:34:24,600 | INFO | Data collection cycle complete.
+2025-11-01 20:34:24,602 | INFO | Sleeping for 410.0 seconds...
+2025-11-01 20:41:14,602 | INFO | Collecting all data at 2025-11-01 15:11:14 UTC
+2025-11-01 20:41:15,838 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-01 20:41:16,288 | INFO | Weather stored | Bangalore: 23.71°C, 67%
+2025-11-01 20:41:17,141 | INFO | Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 20:41:17,141 | INFO | Data collection cycle complete.
+2025-11-01 20:41:17,144 | INFO | Sleeping for 410.0 seconds...
+2025-11-01 20:48:07,145 | INFO | Collecting all data at 2025-11-01 15:18:07 UTC
+2025-11-01 20:48:08,102 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-01 20:48:08,521 | INFO | Weather stored | Bangalore: 23.53°C, 67%
+2025-11-01 20:48:09,312 | INFO | Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 20:48:09,312 | INFO | Data collection cycle complete.
+2025-11-01 20:48:09,313 | INFO | Sleeping for 410.0 seconds...
+2025-11-01 21:06:00,452 | INFO | Collecting all data at 2025-11-01 15:36:00 UTC
+2025-11-01 21:06:01,346 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-01 21:06:01,800 | INFO | Weather stored | Bangalore: 23.24°C, 66%
+2025-11-01 21:06:02,863 | INFO | Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 21:06:02,864 | INFO | Data collection cycle complete.
+2025-11-01 21:06:02,865 | INFO | Sleeping for 410.0 seconds...
+2025-11-01 21:11:34,897 | INFO | Collector stopped manually.
+2025-11-01 22:37:41,859 | INFO | Auto collector started (interval: 410.0 seconds)
+2025-11-01 22:37:41,860 | INFO | Background collector thread launched.
+2025-11-01 22:37:41,861 | INFO | Collecting all data at 2025-11-01 17:07:41 UTC
+2025-11-01 22:37:43,186 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-01 22:37:43,633 | INFO | Weather stored | Bangalore: 22.75°C, 70%
+2025-11-01 22:37:44,423 | INFO | Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 22:37:44,423 | INFO | Data collection cycle complete.
+2025-11-01 22:37:44,424 | INFO | Sleeping for 410.0 seconds...
+2025-11-01 22:44:34,425 | INFO | Collecting all data at 2025-11-01 17:14:34 UTC
+2025-11-01 22:44:35,678 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-01 22:44:36,297 | INFO | Weather stored | Bangalore: 22.75°C, 70%
+2025-11-01 22:44:38,853 | INFO | Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 22:44:38,854 | INFO | Data collection cycle complete.
+2025-11-01 22:44:38,858 | INFO | Sleeping for 410.0 seconds...
+2025-11-01 22:51:28,859 | INFO | Collecting all data at 2025-11-01 17:21:28 UTC
+2025-11-01 22:51:30,066 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-01 22:51:30,528 | INFO | Weather stored | Bangalore: 22.75°C, 71%
+2025-11-01 22:51:31,340 | INFO | Air Quality stored | Bangalore: AQI=154.0
+2025-11-01 22:51:31,340 | INFO | Data collection cycle complete.
+2025-11-01 22:51:31,342 | INFO | Sleeping for 410.0 seconds...
+2025-11-01 22:53:24,256 | INFO | Collector stopped manually.
+2025-11-02 15:50:13,126 | INFO | Auto collector started (interval: 410.0 seconds)
+2025-11-02 15:50:13,126 | INFO | Background collector thread launched.
+2025-11-02 15:50:13,127 | INFO | Collecting all data at 2025-11-02 10:20:13 UTC
+2025-11-02 15:50:14,519 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-02 15:50:14,938 | INFO | Weather stored | Bangalore: 28.14°C, 55%
+2025-11-02 15:50:15,804 | INFO | Air Quality stored | Bangalore: AQI=195.8
+2025-11-02 15:50:15,804 | INFO | Data collection cycle complete.
+2025-11-02 15:50:15,805 | INFO | Sleeping for 410.0 seconds...
+2025-11-02 15:57:05,806 | INFO | Collecting all data at 2025-11-02 10:27:05 UTC
+2025-11-02 15:57:06,858 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-02 15:57:07,305 | INFO | Weather stored | Bangalore: 28.14°C, 55%
+2025-11-02 15:57:08,175 | INFO | Air Quality stored | Bangalore: AQI=201.5
+2025-11-02 15:57:08,175 | INFO | Data collection cycle complete.
+2025-11-02 15:57:08,179 | INFO | Sleeping for 410.0 seconds...
+2025-11-02 16:03:58,180 | INFO | Collecting all data at 2025-11-02 10:33:58 UTC
+2025-11-02 16:03:59,434 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-02 16:03:59,840 | INFO | Weather stored | Bangalore: 27.99°C, 58%
+2025-11-02 16:04:00,556 | INFO | Air Quality stored | Bangalore: AQI=201.5
+2025-11-02 16:04:00,556 | INFO | Data collection cycle complete.
+2025-11-02 16:04:00,557 | INFO | Sleeping for 410.0 seconds...
+2025-11-02 16:31:19,276 | INFO | Collecting all data at 2025-11-02 11:01:19 UTC
+2025-11-02 16:31:20,423 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-02 16:31:21,277 | INFO | Weather stored | Bangalore: 27.73°C, 58%
+2025-11-02 16:31:22,421 | INFO | Air Quality stored | Bangalore: AQI=201.5
+2025-11-02 16:31:22,422 | INFO | Data collection cycle complete.
+2025-11-02 16:31:22,428 | INFO | Sleeping for 410.0 seconds...
+2025-11-02 16:40:29,604 | INFO | Collecting all data at 2025-11-02 11:10:29 UTC
+2025-11-02 16:40:29,810 | ERROR | Traffic collection failed: HTTPSConnectionPool(host='api.tomtom.com', port=443): Max retries exceeded with url: /traffic/services/4/flowSegmentData/absolute/10/json?point=12.9716,77.5946&unit=KMPH&key=9AJSHZwsSKPHm9yFsCmmUrn6FFLUDgUh (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001FACF506350>: Failed to resolve 'api.tomtom.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-02 16:40:29,856 | ERROR | Weather collection failed: HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?q=Bangalore&units=metric&appid=de06e1267ed99ce53c8d5eba93de638a (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001FACF507750>: Failed to resolve 'api.openweathermap.org' ([Errno 11001] getaddrinfo failed)"))
+2025-11-02 16:40:29,877 | ERROR | Air Quality collection failed: HTTPSConnectionPool(host='air-quality-api.open-meteo.com', port=443): Max retries exceeded with url: /v1/air-quality?latitude=12.9719&longitude=77.5937&hourly=pm10,pm2_5,carbon_monoxide,carbon_dioxide,nitrogen_dioxide,sulphur_dioxide,ozone,dust&timezone=auto&forecast_days=1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001FACF507890>: Failed to resolve 'air-quality-api.open-meteo.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-02 16:40:29,891 | INFO | Data collection cycle complete.
+2025-11-02 16:40:29,900 | INFO | Sleeping for 410.0 seconds...
+2025-11-02 18:34:58,847 | INFO | Collecting all data at 2025-11-02 13:04:58 UTC
+2025-11-02 18:34:58,956 | ERROR | Traffic collection failed: HTTPSConnectionPool(host='api.tomtom.com', port=443): Max retries exceeded with url: /traffic/services/4/flowSegmentData/absolute/10/json?point=12.9716,77.5946&unit=KMPH&key=9AJSHZwsSKPHm9yFsCmmUrn6FFLUDgUh (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001FACF506FD0>: Failed to resolve 'api.tomtom.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-02 18:34:58,971 | ERROR | Weather collection failed: HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?q=Bangalore&units=metric&appid=de06e1267ed99ce53c8d5eba93de638a (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001FACF507390>: Failed to resolve 'api.openweathermap.org' ([Errno 11001] getaddrinfo failed)"))
+2025-11-02 18:34:59,009 | ERROR | Air Quality collection failed: HTTPSConnectionPool(host='air-quality-api.open-meteo.com', port=443): Max retries exceeded with url: /v1/air-quality?latitude=12.9719&longitude=77.5937&hourly=pm10,pm2_5,carbon_monoxide,carbon_dioxide,nitrogen_dioxide,sulphur_dioxide,ozone,dust&timezone=auto&forecast_days=1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001FACF507C50>: Failed to resolve 'air-quality-api.open-meteo.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-02 18:34:59,019 | INFO | Data collection cycle complete.
+2025-11-02 18:34:59,031 | INFO | Sleeping for 410.0 seconds...
+2025-11-02 20:54:25,966 | INFO | Collecting all data at 2025-11-02 15:24:25 UTC
+2025-11-02 20:54:27,282 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-02 20:54:27,730 | INFO | Weather stored | Bangalore: 23.18°C, 72%
+2025-11-02 20:54:28,813 | INFO | Air Quality stored | Bangalore: AQI=201.5
+2025-11-02 20:54:28,813 | INFO | Data collection cycle complete.
+2025-11-02 20:54:28,816 | INFO | Sleeping for 410.0 seconds...
+2025-11-02 21:26:30,022 | INFO | Collecting all data at 2025-11-02 15:56:30 UTC
+2025-11-02 21:26:34,289 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-02 21:26:34,914 | INFO | Weather stored | Bangalore: 22.95°C, 78%
+2025-11-02 21:26:37,018 | INFO | Air Quality stored | Bangalore: AQI=201.5
+2025-11-02 21:26:37,018 | INFO | Data collection cycle complete.
+2025-11-02 21:26:37,019 | INFO | Sleeping for 410.0 seconds...
+2025-11-02 21:33:27,020 | INFO | Collecting all data at 2025-11-02 16:03:27 UTC
+2025-11-02 21:33:29,180 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-02 21:33:29,606 | INFO | Weather stored | Bangalore: 22.59°C, 78%
+2025-11-02 21:33:30,924 | INFO | Air Quality stored | Bangalore: AQI=201.5
+2025-11-02 21:33:30,924 | INFO | Data collection cycle complete.
+2025-11-02 21:33:30,933 | INFO | Sleeping for 410.0 seconds...
+2025-11-02 21:40:20,953 | INFO | Collecting all data at 2025-11-02 16:10:20 UTC
+2025-11-02 21:40:24,927 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-02 21:40:25,371 | INFO | Weather stored | Bangalore: 22.52°C, 78%
+2025-11-02 21:40:26,257 | INFO | Air Quality stored | Bangalore: AQI=201.5
+2025-11-02 21:40:26,257 | INFO | Data collection cycle complete.
+2025-11-02 21:40:26,261 | INFO | Sleeping for 410.0 seconds...
+2025-11-02 21:47:16,262 | INFO | Collecting all data at 2025-11-02 16:17:16 UTC
+2025-11-02 21:47:18,964 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-02 21:47:19,469 | INFO | Weather stored | Bangalore: 22.52°C, 78%
+2025-11-02 21:47:21,098 | INFO | Air Quality stored | Bangalore: AQI=201.5
+2025-11-02 21:47:21,098 | INFO | Data collection cycle complete.
+2025-11-02 21:47:21,100 | INFO | Sleeping for 410.0 seconds...
+2025-11-02 21:54:11,100 | INFO | Collecting all data at 2025-11-02 16:24:11 UTC
+2025-11-02 21:54:12,370 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-02 21:54:12,953 | INFO | Weather stored | Bangalore: 22.52°C, 78%
+2025-11-02 21:54:13,961 | INFO | Air Quality stored | Bangalore: AQI=201.5
+2025-11-02 21:54:13,962 | INFO | Data collection cycle complete.
+2025-11-02 21:54:13,965 | INFO | Sleeping for 410.0 seconds...
+2025-11-02 22:01:03,966 | INFO | Collecting all data at 2025-11-02 16:31:03 UTC
+2025-11-02 22:01:05,095 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-02 22:01:05,525 | INFO | Weather stored | Bangalore: 22.65°C, 77%
+2025-11-02 22:01:06,525 | INFO | Air Quality stored | Bangalore: AQI=201.5
+2025-11-02 22:01:06,525 | INFO | Data collection cycle complete.
+2025-11-02 22:01:06,527 | INFO | Sleeping for 410.0 seconds...
+2025-11-02 22:02:07,875 | INFO | Collector stopped manually.
+2025-11-02 22:51:02,936 | INFO | Auto collector started (interval: 410.0 seconds)
+2025-11-02 22:51:02,937 | INFO | Background collector thread launched.
+2025-11-02 22:51:02,937 | INFO | Collecting all data at 2025-11-02 17:21:02 UTC
+2025-11-02 22:51:04,078 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-02 22:51:04,534 | INFO | Weather stored | Bangalore: 22.52°C, 78%
+2025-11-02 22:51:04,535 | ERROR | ❌ Failed to update AirQualityHourly: name 'func' is not defined
+2025-11-02 22:51:04,535 | INFO | Data collection cycle complete.
+2025-11-02 22:51:04,536 | INFO | Sleeping for 410.0 seconds...
+2025-11-02 23:00:39,178 | INFO | Collector stopped manually.
+2025-11-02 23:02:37,129 | INFO | Auto collector started (interval: 410.0 seconds)
+2025-11-02 23:02:37,129 | INFO | Background collector thread launched.
+2025-11-02 23:02:37,130 | INFO | Collecting all data at 2025-11-02 17:32:37 UTC
+2025-11-02 23:02:38,238 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-02 23:02:39,722 | INFO | Weather stored | Bangalore: 22.46°C, 81%
+2025-11-02 23:02:41,512 | INFO | Air Quality stored | Bangalore: AQI=201.5
+2025-11-02 23:02:41,512 | INFO | Data collection cycle complete.
+2025-11-02 23:02:41,513 | INFO | Sleeping for 410.0 seconds...
+2025-11-02 23:06:15,878 | INFO | Collector stopped manually.
+2025-11-03 19:19:19,617 | INFO | Auto collector started (interval: 410.0 seconds)
+2025-11-03 19:19:19,617 | INFO | Background collector thread launched.
+2025-11-03 19:19:19,618 | INFO | Collecting all data at 2025-11-03 13:49:19 UTC
+2025-11-03 19:19:23,704 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-03 19:19:24,148 | INFO | Weather stored | Bangalore: 23.64°C, 76%
+2025-11-03 19:19:26,800 | INFO | Air Quality stored | Bangalore: AQI=247.3
+2025-11-03 19:19:26,800 | INFO | Data collection cycle complete.
+2025-11-03 19:19:26,802 | INFO | Sleeping for 410.0 seconds...
+2025-11-03 19:24:28,009 | INFO | Collector stopped manually.
+2025-11-03 19:36:28,296 | INFO | Auto collector started (interval: 410.0 seconds)
+2025-11-03 19:36:28,296 | INFO | Background collector thread launched.
+2025-11-03 19:36:28,297 | INFO | Collecting all data at 2025-11-03 14:06:28 UTC
+2025-11-03 19:36:31,254 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-03 19:36:31,709 | INFO | Weather stored | Bangalore: 23.64°C, 76%
+2025-11-03 19:36:36,538 | INFO | Air Quality stored | Bangalore: PM2.5=56.2 µg/m³, AQI=93.6
+2025-11-03 19:36:36,539 | INFO | Data collection cycle complete.
+2025-11-03 19:36:36,540 | INFO | Sleeping for 410.0 seconds...
+2025-11-03 19:40:40,329 | INFO | Collector stopped manually.
+2025-11-03 19:40:42,866 | INFO | Auto collector started (interval: 410.0 seconds)
+2025-11-03 19:40:42,866 | INFO | Background collector thread launched.
+2025-11-03 19:40:42,866 | INFO | Collecting all data at 2025-11-03 14:10:42 UTC
+2025-11-03 19:40:45,194 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-03 19:40:45,695 | INFO | Weather stored | Bangalore: 23.17°C, 75%
+2025-11-03 19:40:47,074 | INFO | Air Quality stored | Bangalore: PM2.5=56.2 µg/m³, AQI=93.6
+2025-11-03 19:40:47,074 | INFO | Data collection cycle complete.
+2025-11-03 19:40:47,077 | INFO | Sleeping for 410.0 seconds...
+2025-11-03 19:47:37,078 | INFO | Collecting all data at 2025-11-03 14:17:37 UTC
+2025-11-03 19:47:41,500 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-03 19:47:41,923 | INFO | Weather stored | Bangalore: 23.17°C, 75%
+2025-11-03 19:47:43,218 | INFO | Air Quality stored | Bangalore: PM2.5=56.2 µg/m³, AQI=93.6
+2025-11-03 19:47:43,218 | INFO | Data collection cycle complete.
+2025-11-03 19:47:43,219 | INFO | Sleeping for 410.0 seconds...
+2025-11-03 19:51:32,359 | INFO | Collector stopped manually.
+2025-11-03 19:51:35,516 | INFO | Auto collector started (interval: 410.0 seconds)
+2025-11-03 19:51:35,516 | INFO | Background collector thread launched.
+2025-11-03 19:51:35,516 | INFO | Collecting all data at 2025-11-03 14:21:35 UTC
+2025-11-03 19:51:38,827 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-03 19:51:39,271 | INFO | Weather stored | Bangalore: 23.23°C, 77%
+2025-11-03 19:51:44,002 | INFO | Air Quality stored | Bangalore: PM2.5=56.2 µg/m³, AQI=93.6
+2025-11-03 19:51:44,003 | INFO | Data collection cycle complete.
+2025-11-03 19:51:44,004 | INFO | Sleeping for 410.0 seconds...
+2025-11-03 19:54:10,660 | INFO | Collector stopped manually.
+2025-11-03 19:54:12,758 | INFO | Auto collector started (interval: 410.0 seconds)
+2025-11-03 19:54:12,758 | INFO | Background collector thread launched.
+2025-11-03 19:54:12,759 | INFO | Collecting all data at 2025-11-03 14:24:12 UTC
+2025-11-03 19:54:14,509 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-03 19:54:14,941 | INFO | Weather stored | Bangalore: 23.23°C, 77%
+2025-11-03 19:54:16,386 | INFO | Air Quality stored | Bangalore: PM2.5=56.2 µg/m³, AQI=93.6
+2025-11-03 19:54:16,387 | INFO | Data collection cycle complete.
+2025-11-03 19:54:16,388 | INFO | Sleeping for 410.0 seconds...
+2025-11-03 19:55:04,534 | INFO | Collector stopped manually.
+2025-11-03 19:57:00,328 | INFO | Auto collector started (interval: 410.0 seconds)
+2025-11-03 19:57:00,328 | INFO | Background collector thread launched.
+2025-11-03 19:57:00,329 | INFO | Collecting all data at 2025-11-03 14:27:00 UTC
+2025-11-03 19:57:01,827 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-03 19:57:02,291 | INFO | Weather stored | Bangalore: 23.23°C, 77%
+2025-11-03 19:57:04,225 | INFO | Air Quality stored | Bangalore: PM2.5=56.2 µg/m³, AQI=93.6
+2025-11-03 19:57:04,225 | INFO | Data collection cycle complete.
+2025-11-03 19:57:04,227 | INFO | Sleeping for 410.0 seconds...
+2025-11-03 20:03:54,227 | INFO | Collecting all data at 2025-11-03 14:33:54 UTC
+2025-11-03 20:03:57,169 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-03 20:03:57,681 | INFO | Weather stored | Bangalore: 23.23°C, 77%
+2025-11-03 20:03:58,874 | INFO | Air Quality stored | Bangalore: PM2.5=56.2 µg/m³, AQI=93.6
+2025-11-03 20:03:58,874 | INFO | Data collection cycle complete.
+2025-11-03 20:03:58,876 | INFO | Sleeping for 410.0 seconds...
+2025-11-03 20:10:48,876 | INFO | Collecting all data at 2025-11-03 14:40:48 UTC
+2025-11-03 20:10:49,930 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-03 20:10:50,578 | INFO | Weather stored | Bangalore: 23.23°C, 77%
+2025-11-03 20:10:52,471 | INFO | Air Quality stored | Bangalore: PM2.5=56.2 µg/m³, AQI=93.6
+2025-11-03 20:10:52,471 | INFO | Data collection cycle complete.
+2025-11-03 20:10:52,472 | INFO | Sleeping for 410.0 seconds...
+2025-11-03 20:17:42,473 | INFO | Collecting all data at 2025-11-03 14:47:42 UTC
+2025-11-03 20:17:43,648 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-03 20:17:44,101 | INFO | Weather stored | Bangalore: 23.23°C, 78%
+2025-11-03 20:17:44,997 | INFO | Air Quality stored | Bangalore: PM2.5=56.2 µg/m³, AQI=93.6
+2025-11-03 20:17:44,997 | INFO | Data collection cycle complete.
+2025-11-03 20:17:45,000 | INFO | Sleeping for 410.0 seconds...
+2025-11-03 20:24:35,001 | INFO | Collecting all data at 2025-11-03 14:54:35 UTC
+2025-11-03 20:24:36,106 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-03 20:24:36,536 | INFO | Weather stored | Bangalore: 22.6°C, 80%
+2025-11-03 20:24:37,246 | INFO | Air Quality stored | Bangalore: PM2.5=56.2 µg/m³, AQI=93.6
+2025-11-03 20:24:37,246 | INFO | Data collection cycle complete.
+2025-11-03 20:24:37,248 | INFO | Sleeping for 410.0 seconds...
+2025-11-03 20:31:27,249 | INFO | Collecting all data at 2025-11-03 15:01:27 UTC
+2025-11-03 20:31:29,060 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-03 20:31:29,497 | INFO | Weather stored | Bangalore: 22.6°C, 80%
+2025-11-03 20:31:30,289 | INFO | Air Quality stored | Bangalore: PM2.5=56.2 µg/m³, AQI=93.6
+2025-11-03 20:31:30,289 | INFO | Data collection cycle complete.
+2025-11-03 20:31:30,291 | INFO | Sleeping for 410.0 seconds...
+2025-11-03 20:38:20,291 | INFO | Collecting all data at 2025-11-03 15:08:20 UTC
+2025-11-03 20:38:21,492 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-03 20:38:21,954 | INFO | Weather stored | Bangalore: 22.6°C, 80%
+2025-11-03 20:38:23,002 | INFO | Air Quality stored | Bangalore: PM2.5=56.2 µg/m³, AQI=93.6
+2025-11-03 20:38:23,003 | INFO | Data collection cycle complete.
+2025-11-03 20:38:23,004 | INFO | Sleeping for 410.0 seconds...
+2025-11-03 20:45:13,005 | INFO | Collecting all data at 2025-11-03 15:15:13 UTC
+2025-11-03 20:45:14,300 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-03 20:45:14,769 | INFO | Weather stored | Bangalore: 22.37°C, 84%
+2025-11-03 20:45:16,719 | INFO | Air Quality stored | Bangalore: PM2.5=56.2 µg/m³, AQI=93.6
+2025-11-03 20:45:16,719 | INFO | Data collection cycle complete.
+2025-11-03 20:45:16,721 | INFO | Sleeping for 410.0 seconds...
+2025-11-03 20:49:40,856 | INFO | Collector stopped manually.
+2025-11-03 20:49:40,859 | INFO | Auto collector started (interval: 410.0 seconds)
+2025-11-03 20:49:40,860 | INFO | Background collector thread launched.
+2025-11-03 20:49:40,860 | INFO | Collecting all data at 2025-11-03 15:19:40 UTC
+2025-11-03 20:49:42,164 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-03 20:49:43,615 | INFO | Weather stored | Bangalore: 22.37°C, 84%
+2025-11-03 20:49:44,451 | INFO | Air Quality stored | Bangalore: PM2.5=56.2 µg/m³, AQI=93.6
+2025-11-03 20:49:44,451 | INFO | Data collection cycle complete.
+2025-11-03 20:49:44,452 | INFO | Sleeping for 410.0 seconds...
+2025-11-04 10:37:40,062 | INFO | Auto collector started (interval: 410.0 seconds)
+2025-11-04 10:37:40,062 | INFO | Background collector thread launched.
+2025-11-04 10:37:40,062 | INFO | Collecting all data at 2025-11-04 05:07:40 UTC
+2025-11-04 10:37:41,872 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-04 10:37:42,455 | INFO | Weather stored | Bangalore: 22.9°C, 80%
+2025-11-04 10:37:44,199 | INFO | Air Quality stored | Bangalore: PM2.5=15.8 µg/m³, AQI=26.3
+2025-11-04 10:37:44,199 | INFO | Data collection cycle complete.
+2025-11-04 10:37:44,200 | INFO | Sleeping for 410.0 seconds...
+2025-11-04 10:44:34,201 | INFO | Collecting all data at 2025-11-04 05:14:34 UTC
+2025-11-04 10:44:35,312 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-04 10:44:36,062 | INFO | Weather stored | Bangalore: 25.1°C, 74%
+2025-11-04 10:44:37,195 | INFO | Air Quality stored | Bangalore: PM2.5=15.8 µg/m³, AQI=26.3
+2025-11-04 10:44:37,195 | INFO | Data collection cycle complete.
+2025-11-04 10:44:37,197 | INFO | Sleeping for 410.0 seconds...
+2025-11-04 10:51:27,198 | INFO | Collecting all data at 2025-11-04 05:21:27 UTC
+2025-11-04 10:51:28,731 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-04 10:51:31,895 | INFO | Weather stored | Bangalore: 25.1°C, 74%
+2025-11-04 10:51:33,124 | INFO | Air Quality stored | Bangalore: PM2.5=15.8 µg/m³, AQI=26.3
+2025-11-04 10:51:33,125 | INFO | Data collection cycle complete.
+2025-11-04 10:51:33,127 | INFO | Sleeping for 410.0 seconds...
+2025-11-04 10:59:37,143 | INFO | Collecting all data at 2025-11-04 05:29:37 UTC
+2025-11-04 10:59:37,190 | ERROR | Traffic collection failed: HTTPSConnectionPool(host='api.tomtom.com', port=443): Max retries exceeded with url: /traffic/services/4/flowSegmentData/absolute/10/json?point=12.9716,77.5946&unit=KMPH&key=9AJSHZwsSKPHm9yFsCmmUrn6FFLUDgUh (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000026C125DA850>: Failed to resolve 'api.tomtom.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-04 10:59:37,209 | ERROR | Weather collection failed: HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?q=Bangalore&units=metric&appid=de06e1267ed99ce53c8d5eba93de638a (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000026C129C4F50>: Failed to resolve 'api.openweathermap.org' ([Errno 11001] getaddrinfo failed)"))
+2025-11-04 10:59:37,217 | ERROR | Air Quality collection failed: HTTPSConnectionPool(host='air-quality-api.open-meteo.com', port=443): Max retries exceeded with url: /v1/air-quality?latitude=12.9719&longitude=77.5937&hourly=pm10,pm2_5,carbon_monoxide,carbon_dioxide,nitrogen_dioxide,sulphur_dioxide,ozone,dust&timezone=auto&forecast_days=1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000026C129C4CD0>: Failed to resolve 'air-quality-api.open-meteo.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-04 10:59:37,224 | INFO | Data collection cycle complete.
+2025-11-04 10:59:37,239 | INFO | Sleeping for 410.0 seconds...
+2025-11-04 11:07:24,531 | INFO | Collecting all data at 2025-11-04 05:37:24 UTC
+2025-11-04 11:07:28,013 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-04 11:07:39,599 | INFO | Weather stored | Bangalore: 25.2°C, 72%
+2025-11-04 11:07:47,679 | INFO | Air Quality stored | Bangalore: PM2.5=15.8 µg/m³, AQI=26.3
+2025-11-04 11:07:47,680 | INFO | Data collection cycle complete.
+2025-11-04 11:07:47,681 | INFO | Sleeping for 410.0 seconds...
+2025-11-04 11:14:37,682 | INFO | Collecting all data at 2025-11-04 05:44:37 UTC
+2025-11-04 11:14:39,462 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-04 11:14:40,362 | INFO | Weather stored | Bangalore: 25.2°C, 72%
+2025-11-04 11:14:41,861 | INFO | Air Quality stored | Bangalore: PM2.5=15.8 µg/m³, AQI=26.3
+2025-11-04 11:14:41,862 | INFO | Data collection cycle complete.
+2025-11-04 11:14:41,863 | INFO | Sleeping for 410.0 seconds...
+2025-11-04 11:21:31,863 | INFO | Collecting all data at 2025-11-04 05:51:31 UTC
+2025-11-04 11:21:33,914 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-04 11:21:36,381 | INFO | Weather stored | Bangalore: 25.66°C, 69%
+2025-11-04 11:21:37,852 | INFO | Air Quality stored | Bangalore: PM2.5=15.8 µg/m³, AQI=26.3
+2025-11-04 11:21:37,853 | INFO | Data collection cycle complete.
+2025-11-04 11:21:37,854 | INFO | Sleeping for 410.0 seconds...
+2025-11-05 10:00:11,684 | INFO | Auto collector started (interval: 410.0 seconds)
+2025-11-05 10:00:11,684 | INFO | Background collector thread launched.
+2025-11-05 10:00:11,685 | INFO | Collecting all data at 2025-11-05 04:30:11 UTC
+2025-11-05 10:00:13,980 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-05 10:00:14,372 | INFO | Weather stored | Bangalore: 24.33°C, 79%
+2025-11-05 10:00:15,183 | INFO | Air Quality stored | Bangalore: PM2.5=26.2 µg/m³, AQI=43.7
+2025-11-05 10:00:15,184 | INFO | Data collection cycle complete.
+2025-11-05 10:00:15,186 | INFO | Sleeping for 410.0 seconds...
+2025-11-05 10:05:51,178 | INFO | Collector stopped manually.
+2025-11-05 10:05:51,179 | INFO | Auto collector started (interval: 410.0 seconds)
+2025-11-05 10:05:51,179 | INFO | Background collector thread launched.
+2025-11-05 10:05:51,180 | INFO | Collecting all data at 2025-11-05 04:35:51 UTC
+2025-11-05 10:05:52,691 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-05 10:05:53,093 | INFO | Weather stored | Bangalore: 24.42°C, 79%
+2025-11-05 10:05:53,920 | INFO | Air Quality stored | Bangalore: PM2.5=26.2 µg/m³, AQI=43.7
+2025-11-05 10:05:53,920 | INFO | Data collection cycle complete.
+2025-11-05 10:05:53,922 | INFO | Sleeping for 410.0 seconds...
+2025-11-05 10:05:55,425 | INFO | Collector stopped manually.
+2025-11-05 10:05:58,661 | INFO | Auto collector started (interval: 410.0 seconds)
+2025-11-05 10:05:58,661 | INFO | Background collector thread launched.
+2025-11-05 10:05:58,661 | INFO | Collecting all data at 2025-11-05 04:35:58 UTC
+2025-11-05 10:05:59,663 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-05 10:06:00,085 | INFO | Weather stored | Bangalore: 24.42°C, 79%
+2025-11-05 10:06:00,885 | INFO | Air Quality stored | Bangalore: PM2.5=26.2 µg/m³, AQI=43.7
+2025-11-05 10:06:00,886 | INFO | Data collection cycle complete.
+2025-11-05 10:06:00,887 | INFO | Sleeping for 410.0 seconds...
+2025-11-05 10:25:25,131 | INFO | Collecting all data at 2025-11-05 04:55:25 UTC
+2025-11-05 10:25:25,165 | ERROR | Traffic collection failed: HTTPSConnectionPool(host='api.tomtom.com', port=443): Max retries exceeded with url: /traffic/services/4/flowSegmentData/absolute/10/json?point=12.9716,77.5946&unit=KMPH&key=9AJSHZwsSKPHm9yFsCmmUrn6FFLUDgUh (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000225B5BBB9D0>: Failed to resolve 'api.tomtom.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-05 10:25:25,171 | ERROR | Weather collection failed: HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?q=Bangalore&units=metric&appid=de06e1267ed99ce53c8d5eba93de638a (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000225B5BBB750>: Failed to resolve 'api.openweathermap.org' ([Errno 11001] getaddrinfo failed)"))
+2025-11-05 10:25:25,175 | ERROR | Air Quality collection failed: HTTPSConnectionPool(host='air-quality-api.open-meteo.com', port=443): Max retries exceeded with url: /v1/air-quality?latitude=12.9719&longitude=77.5937&hourly=pm10,pm2_5,carbon_monoxide,carbon_dioxide,nitrogen_dioxide,sulphur_dioxide,ozone,dust&timezone=auto&forecast_days=1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000225B5BBB4D0>: Failed to resolve 'air-quality-api.open-meteo.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-05 10:25:25,175 | INFO | Data collection cycle complete.
+2025-11-05 10:25:25,176 | INFO | Sleeping for 410.0 seconds...
+2025-11-05 11:42:35,347 | INFO | Collecting all data at 2025-11-05 06:12:35 UTC
+2025-11-05 11:42:36,544 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-05 11:42:37,042 | INFO | Weather stored | Bangalore: 26.2°C, 71%
+2025-11-05 11:42:37,882 | INFO | Air Quality stored | Bangalore: PM2.5=26.2 µg/m³, AQI=43.7
+2025-11-05 11:42:37,882 | INFO | Data collection cycle complete.
+2025-11-05 11:42:37,883 | INFO | Sleeping for 410.0 seconds...
+2025-11-05 11:51:59,292 | INFO | Collecting all data at 2025-11-05 06:21:59 UTC
+2025-11-05 11:52:01,067 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-05 11:52:02,568 | INFO | Weather stored | Bangalore: 25.9°C, 72%
+2025-11-05 11:52:03,386 | INFO | Air Quality stored | Bangalore: PM2.5=26.2 µg/m³, AQI=43.7
+2025-11-05 11:52:03,386 | INFO | Data collection cycle complete.
+2025-11-05 11:52:03,388 | INFO | Sleeping for 410.0 seconds...
+2025-11-05 11:58:53,390 | INFO | Collecting all data at 2025-11-05 06:28:53 UTC
+2025-11-05 11:58:55,130 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-05 11:58:55,550 | INFO | Weather stored | Bangalore: 26.12°C, 72%
+2025-11-05 11:58:56,354 | INFO | Air Quality stored | Bangalore: PM2.5=26.2 µg/m³, AQI=43.7
+2025-11-05 11:58:56,355 | INFO | Data collection cycle complete.
+2025-11-05 11:58:56,356 | INFO | Sleeping for 410.0 seconds...
+2025-11-05 12:05:46,357 | INFO | Collecting all data at 2025-11-05 06:35:46 UTC
+2025-11-05 12:05:47,321 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-05 12:05:47,755 | INFO | Weather stored | Bangalore: 26.12°C, 72%
+2025-11-05 12:05:51,743 | INFO | Air Quality stored | Bangalore: PM2.5=26.2 µg/m³, AQI=43.7
+2025-11-05 12:05:51,744 | INFO | Data collection cycle complete.
+2025-11-05 12:05:51,746 | INFO | Sleeping for 410.0 seconds...
+2025-11-05 12:32:34,612 | INFO | Collecting all data at 2025-11-05 07:02:34 UTC
+2025-11-05 12:32:34,636 | ERROR | Traffic collection failed: HTTPSConnectionPool(host='api.tomtom.com', port=443): Max retries exceeded with url: /traffic/services/4/flowSegmentData/absolute/10/json?point=12.9716,77.5946&unit=KMPH&key=9AJSHZwsSKPHm9yFsCmmUrn6FFLUDgUh (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000225B5BBA350>: Failed to resolve 'api.tomtom.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-05 12:32:34,693 | ERROR | Weather collection failed: HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?q=Bangalore&units=metric&appid=de06e1267ed99ce53c8d5eba93de638a (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000225B5BB9090>: Failed to resolve 'api.openweathermap.org' ([Errno 11001] getaddrinfo failed)"))
+2025-11-05 12:32:36,361 | INFO | Air Quality stored | Bangalore: PM2.5=26.2 µg/m³, AQI=43.7
+2025-11-05 12:32:36,366 | INFO | Data collection cycle complete.
+2025-11-05 12:32:36,373 | INFO | Sleeping for 410.0 seconds...
+2025-11-05 12:33:08,921 | INFO | Collector stopped manually.
+2025-11-05 12:33:08,924 | INFO | Auto collector started (interval: 410.0 seconds)
+2025-11-05 12:33:08,924 | INFO | Background collector thread launched.
+2025-11-05 12:33:08,924 | INFO | Collecting all data at 2025-11-05 07:03:08 UTC
+2025-11-05 12:33:11,152 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-05 12:33:11,672 | INFO | Weather stored | Bangalore: 26.69°C, 69%
+2025-11-05 12:33:12,539 | INFO | Air Quality stored | Bangalore: PM2.5=26.2 µg/m³, AQI=43.7
+2025-11-05 12:33:12,540 | INFO | Data collection cycle complete.
+2025-11-05 12:33:12,542 | INFO | Sleeping for 410.0 seconds...
+2025-11-05 13:19:56,202 | INFO | Collecting all data at 2025-11-05 07:49:56 UTC
+2025-11-05 13:19:56,235 | INFO | Collecting all data at 2025-11-05 07:49:56 UTC
+2025-11-05 13:19:56,305 | ERROR | Traffic collection failed: HTTPSConnectionPool(host='api.tomtom.com', port=443): Max retries exceeded with url: /traffic/services/4/flowSegmentData/absolute/10/json?point=12.9716,77.5946&unit=KMPH&key=9AJSHZwsSKPHm9yFsCmmUrn6FFLUDgUh (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000225B5BB8E10>: Failed to resolve 'api.tomtom.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-05 13:19:56,309 | ERROR | Traffic collection failed: HTTPSConnectionPool(host='api.tomtom.com', port=443): Max retries exceeded with url: /traffic/services/4/flowSegmentData/absolute/10/json?point=12.9716,77.5946&unit=KMPH&key=9AJSHZwsSKPHm9yFsCmmUrn6FFLUDgUh (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000225B5BBBC50>: Failed to resolve 'api.tomtom.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-05 13:19:56,315 | ERROR | Weather collection failed: HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?q=Bangalore&units=metric&appid=de06e1267ed99ce53c8d5eba93de638a (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000225B5BBB390>: Failed to resolve 'api.openweathermap.org' ([Errno 11001] getaddrinfo failed)"))
+2025-11-05 13:19:56,336 | ERROR | Weather collection failed: HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?q=Bangalore&units=metric&appid=de06e1267ed99ce53c8d5eba93de638a (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000225B5BBB4D0>: Failed to resolve 'api.openweathermap.org' ([Errno 11001] getaddrinfo failed)"))
+2025-11-05 13:19:56,339 | ERROR | Air Quality collection failed: HTTPSConnectionPool(host='air-quality-api.open-meteo.com', port=443): Max retries exceeded with url: /v1/air-quality?latitude=12.9719&longitude=77.5937&hourly=pm10,pm2_5,carbon_monoxide,carbon_dioxide,nitrogen_dioxide,sulphur_dioxide,ozone,dust&timezone=auto&forecast_days=1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000225B5BBB750>: Failed to resolve 'air-quality-api.open-meteo.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-05 13:19:56,345 | ERROR | Air Quality collection failed: HTTPSConnectionPool(host='air-quality-api.open-meteo.com', port=443): Max retries exceeded with url: /v1/air-quality?latitude=12.9719&longitude=77.5937&hourly=pm10,pm2_5,carbon_monoxide,carbon_dioxide,nitrogen_dioxide,sulphur_dioxide,ozone,dust&timezone=auto&forecast_days=1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000225B5BBB9D0>: Failed to resolve 'air-quality-api.open-meteo.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-05 13:19:56,352 | INFO | Data collection cycle complete.
+2025-11-05 13:19:56,356 | INFO | Data collection cycle complete.
+2025-11-05 13:19:56,362 | INFO | Sleeping for 410.0 seconds...
+2025-11-05 13:19:56,363 | INFO | Sleeping for 410.0 seconds...
+2025-11-05 13:26:46,365 | INFO | Collecting all data at 2025-11-05 07:56:46 UTC
+2025-11-05 13:26:46,366 | INFO | Collecting all data at 2025-11-05 07:56:46 UTC
+2025-11-05 13:26:48,768 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-05 13:26:48,780 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-05 13:26:49,279 | INFO | Weather stored | Bangalore: 26.48°C, 69%
+2025-11-05 13:26:49,285 | INFO | Weather stored | Bangalore: 26.48°C, 69%
+2025-11-05 13:26:51,441 | INFO | Air Quality stored | Bangalore: PM2.5=26.2 µg/m³, AQI=43.7
+2025-11-05 13:26:51,442 | INFO | Data collection cycle complete.
+2025-11-05 13:26:51,443 | INFO | Sleeping for 410.0 seconds...
+2025-11-05 13:26:51,444 | INFO | Air Quality stored | Bangalore: PM2.5=26.2 µg/m³, AQI=43.7
+2025-11-05 13:26:51,445 | INFO | Data collection cycle complete.
+2025-11-05 13:26:51,446 | INFO | Sleeping for 410.0 seconds...
+2025-11-05 18:34:33,424 | INFO | Auto collector started (interval: 410.0 seconds)
+2025-11-05 18:34:33,424 | INFO | Background collector thread launched.
+2025-11-05 18:34:33,425 | INFO | Collecting all data at 2025-11-05 13:04:33 UTC
+2025-11-05 18:34:34,678 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-05 18:34:35,210 | INFO | Weather stored | Bangalore: 23.98°C, 77%
+2025-11-05 18:34:36,028 | INFO | Air Quality stored | Bangalore: PM2.5=32.8 µg/m³, AQI=54.0
+2025-11-05 18:34:36,029 | INFO | Data collection cycle complete.
+2025-11-05 18:34:36,031 | INFO | Sleeping for 410.0 seconds...
+2025-11-05 18:41:26,032 | INFO | Collecting all data at 2025-11-05 13:11:26 UTC
+2025-11-05 18:41:27,122 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-05 18:41:28,567 | INFO | Weather stored | Bangalore: 23.98°C, 77%
+2025-11-05 18:41:29,500 | INFO | Air Quality stored | Bangalore: PM2.5=32.8 µg/m³, AQI=54.0
+2025-11-05 18:41:29,500 | INFO | Data collection cycle complete.
+2025-11-05 18:41:29,502 | INFO | Sleeping for 410.0 seconds...
+2025-11-05 18:42:14,020 | INFO | Auto collector started (interval: 410.0 seconds)
+2025-11-05 18:42:14,021 | INFO | Background collector thread launched.
+2025-11-05 18:42:14,021 | INFO | Collecting all data at 2025-11-05 13:12:14 UTC
+2025-11-05 18:42:15,213 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-05 18:42:15,685 | INFO | Weather stored | Bangalore: 24.01°C, 77%
+2025-11-05 18:42:16,378 | INFO | Air Quality stored | Bangalore: PM2.5=32.8 µg/m³, AQI=54.0
+2025-11-05 18:42:16,378 | INFO | Data collection cycle complete.
+2025-11-05 18:42:16,379 | INFO | Sleeping for 410.0 seconds...
+2025-11-05 18:42:38,266 | INFO | Auto collector started (interval: 410.0 seconds)
+2025-11-05 18:42:38,266 | INFO | Background collector thread launched.
+2025-11-05 18:42:38,267 | INFO | Collecting all data at 2025-11-05 13:12:38 UTC
+2025-11-05 18:42:39,109 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-05 18:42:40,554 | INFO | Weather stored | Bangalore: 24.01°C, 77%
+2025-11-05 18:42:41,306 | INFO | Air Quality stored | Bangalore: PM2.5=32.8 µg/m³, AQI=54.0
+2025-11-05 18:42:41,307 | INFO | Data collection cycle complete.
+2025-11-05 18:42:41,308 | INFO | Sleeping for 410.0 seconds...
+2025-11-05 18:51:20,557 | INFO | Auto collector started (interval: 410.0 seconds)
+2025-11-05 18:51:20,558 | INFO | Background collector thread launched.
+2025-11-05 18:51:20,558 | INFO | Collecting all data at 2025-11-05 13:21:20 UTC
+2025-11-05 18:51:22,020 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-05 18:51:22,492 | INFO | Weather stored | Bangalore: 24.01°C, 77%
+2025-11-05 18:51:23,222 | INFO | Air Quality stored | Bangalore: PM2.5=32.8 µg/m³, AQI=54.0
+2025-11-05 18:51:23,223 | INFO | Data collection cycle complete.
+2025-11-05 18:51:23,224 | INFO | Sleeping for 410.0 seconds...
+2025-11-05 18:54:14,654 | INFO | Auto collector started (interval: 410.0 seconds)
+2025-11-05 18:54:14,654 | INFO | Background collector thread launched.
+2025-11-05 18:54:14,655 | INFO | Collecting all data at 2025-11-05 13:24:14 UTC
+2025-11-05 18:54:15,564 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-05 18:54:16,047 | INFO | Weather stored | Bangalore: 23.54°C, 77%
+2025-11-05 18:54:16,822 | INFO | Air Quality stored | Bangalore: PM2.5=32.8 µg/m³, AQI=54.0
+2025-11-05 18:54:16,823 | INFO | Data collection cycle complete.
+2025-11-05 18:54:16,825 | INFO | Sleeping for 410.0 seconds...
+2025-11-05 19:01:06,826 | INFO | Collecting all data at 2025-11-05 13:31:06 UTC
+2025-11-05 19:01:08,013 | INFO | Traffic stored (12.9716, 77.5946)
+2025-11-05 19:01:09,471 | INFO | Weather stored | Bangalore: 23.54°C, 77%
+2025-11-05 19:01:10,374 | INFO | Air Quality stored | Bangalore: PM2.5=32.8 µg/m³, AQI=54.0
+2025-11-05 19:01:10,375 | INFO | Data collection cycle complete.
+2025-11-05 19:01:10,376 | INFO | Sleeping for 410.0 seconds...
+2025-11-05 20:18:04,350 | INFO | Collecting all data at 2025-11-05 14:48:04 UTC
+2025-11-05 20:18:04,417 | ERROR | Traffic collection failed: HTTPSConnectionPool(host='api.tomtom.com', port=443): Max retries exceeded with url: /traffic/services/4/flowSegmentData/absolute/10/json?point=12.9716,77.5946&unit=KMPH&key=9AJSHZwsSKPHm9yFsCmmUrn6FFLUDgUh (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002A3F2F8BED0>: Failed to resolve 'api.tomtom.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-05 20:18:04,432 | ERROR | Weather collection failed: HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?q=Bangalore&units=metric&appid=de06e1267ed99ce53c8d5eba93de638a (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002A3F3019590>: Failed to resolve 'api.openweathermap.org' ([Errno 11001] getaddrinfo failed)"))
+2025-11-05 20:18:04,442 | ERROR | Air Quality collection failed: HTTPSConnectionPool(host='air-quality-api.open-meteo.com', port=443): Max retries exceeded with url: /v1/air-quality?latitude=12.9719&longitude=77.5937&hourly=pm10,pm2_5,carbon_monoxide,carbon_dioxide,nitrogen_dioxide,sulphur_dioxide,ozone,dust&timezone=auto&forecast_days=1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002A3F3018B90>: Failed to resolve 'air-quality-api.open-meteo.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-05 20:18:04,446 | INFO | Data collection cycle complete.
+2025-11-05 20:18:04,449 | INFO | Sleeping for 410.0 seconds...
+2025-11-05 22:20:35,108 | INFO | Collecting all data at 2025-11-05 16:50:35 UTC
+2025-11-05 22:20:35,377 | ERROR | Traffic collection failed: HTTPSConnectionPool(host='api.tomtom.com', port=443): Max retries exceeded with url: /traffic/services/4/flowSegmentData/absolute/10/json?point=12.9716,77.5946&unit=KMPH&key=9AJSHZwsSKPHm9yFsCmmUrn6FFLUDgUh (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002A3F301A5D0>: Failed to resolve 'api.tomtom.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-05 22:20:35,398 | ERROR | Weather collection failed: HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/weather?q=Bangalore&units=metric&appid=de06e1267ed99ce53c8d5eba93de638a (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002A3F301A850>: Failed to resolve 'api.openweathermap.org' ([Errno 11001] getaddrinfo failed)"))
+2025-11-05 22:20:35,422 | ERROR | Air Quality collection failed: HTTPSConnectionPool(host='air-quality-api.open-meteo.com', port=443): Max retries exceeded with url: /v1/air-quality?latitude=12.9719&longitude=77.5937&hourly=pm10,pm2_5,carbon_monoxide,carbon_dioxide,nitrogen_dioxide,sulphur_dioxide,ozone,dust&timezone=auto&forecast_days=1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002A3F301AC10>: Failed to resolve 'air-quality-api.open-meteo.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-05 22:20:35,428 | INFO | Data collection cycle complete.
+2025-11-05 22:20:35,431 | INFO | Sleeping for 410.0 seconds...

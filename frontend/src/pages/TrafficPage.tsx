@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   ResponsiveContainer,
   LineChart,
@@ -11,11 +11,12 @@ import {
   BarChart,
   Bar,
 } from "recharts";
+import { motion } from "framer-motion";
 
 type HourlyTraffic = {
-  hour_start?: string;
-  avg_speed?: number;
-  free_flow_avg?: number;
+  hour_start: string;
+  avg_speed: number;
+  free_flow_avg: number;
 };
 
 const BASE_URL =
@@ -24,8 +25,11 @@ const BASE_URL =
 
 export default function TrafficPage() {
   const [data, setData] = useState<HourlyTraffic[]>([]);
+  const [filteredData, setFilteredData] = useState<HourlyTraffic[]>([]);
+  const [view, setView] = useState<"latest" | "daily" | "monthly">("latest");
   const [loading, setLoading] = useState(true);
 
+  // Fetch hourly traffic data
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -35,8 +39,8 @@ export default function TrafficPage() {
         const normalized = arr
           .map((r) => ({
             hour_start: r.hour_start,
-            avg_speed: r.avg_speed,
-            free_flow_avg: r.free_flow_avg,
+            avg_speed: Number(r.avg_speed) || 0,
+            free_flow_avg: Number(r.free_flow_avg) || 0,
           }))
           .filter((x) => x.hour_start)
           .sort(
@@ -44,6 +48,7 @@ export default function TrafficPage() {
               new Date(a.hour_start).getTime() - new Date(b.hour_start).getTime()
           );
         setData(normalized);
+        setFilteredData(normalized.slice(-4)); // default: latest 4 records
       } catch (e) {
         console.error("Traffic fetch error:", e);
       } finally {
@@ -53,8 +58,40 @@ export default function TrafficPage() {
     fetchData();
   }, []);
 
+  // Compute daily & monthly averages
+  const computeAverages = (interval: "daily" | "monthly") => {
+    const grouped: Record<string, { avg_speed: number[]; free_flow_avg: number[] }> = {};
+    data.forEach((item) => {
+      const date = new Date(item.hour_start);
+      const key =
+        interval === "daily"
+          ? date.toISOString().split("T")[0]
+          : `${date.getFullYear()}-${date.getMonth() + 1}`;
+      if (!grouped[key]) grouped[key] = { avg_speed: [], free_flow_avg: [] };
+      grouped[key].avg_speed.push(item.avg_speed);
+      grouped[key].free_flow_avg.push(item.free_flow_avg);
+    });
+    return Object.entries(grouped).map(([key, values]) => ({
+      hour_start: key,
+      avg_speed:
+        values.avg_speed.reduce((a, b) => a + b, 0) / values.avg_speed.length,
+      free_flow_avg:
+        values.free_flow_avg.reduce((a, b) => a + b, 0) /
+        values.free_flow_avg.length,
+    }));
+  };
+
+  // Update filtered data on view change
+  useEffect(() => {
+    if (view === "latest") setFilteredData(data.slice(-4));
+    else if (view === "daily") setFilteredData(computeAverages("daily"));
+    else if (view === "monthly") setFilteredData(computeAverages("monthly"));
+  }, [view, data]);
+
+  const fmt = (v: number | undefined | null) =>
+    typeof v === "number" && !isNaN(v) ? v.toFixed(1) : "—";
+
   const latest = data.at(-1);
-  const fmt = (v: any) => (v ? v.toFixed(1) : "—");
 
   if (loading)
     return (
@@ -72,40 +109,78 @@ export default function TrafficPage() {
         Bangalore, India — Real-time Traffic Analytics
       </p>
 
-      {/* Summary */}
+      {/* Summary Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
-        <div className="bg-gradient-to-r from-orange-500 to-red-400 rounded-2xl p-6 text-center">
+        <motion.div
+          className="bg-gradient-to-r from-orange-500 to-red-400 rounded-2xl p-6 text-center"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
           <h3 className="text-sm text-slate-900 font-medium">Avg Speed</h3>
           <p className="text-4xl font-bold text-white mt-1">
             {fmt(latest?.avg_speed)} km/h
           </p>
-        </div>
-        <div className="bg-gradient-to-r from-sky-500 to-cyan-400 rounded-2xl p-6 text-center">
+        </motion.div>
+
+        <motion.div
+          className="bg-gradient-to-r from-sky-500 to-cyan-400 rounded-2xl p-6 text-center"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
           <h3 className="text-sm text-slate-900 font-medium">Free Flow Avg</h3>
           <p className="text-4xl font-bold text-white mt-1">
-            {fmt(latest?.free_flow_avg)} km/h
+            {fmt(latest?.free_flow_avg)} %
           </p>
-        </div>
+        </motion.div>
+      </div>
+
+      {/* View Selector */}
+      <div className="flex justify-center mb-6 space-x-3">
+        {["latest", "daily", "monthly"].map((v) => (
+          <button
+            key={v}
+            className={`px-4 py-2 rounded-lg transition ${
+              view === v ? "bg-amber-400 text-black" : "bg-slate-700 hover:bg-slate-600"
+            }`}
+            onClick={() => setView(v as any)}
+          >
+            {v === "latest"
+              ? "Last 4 Records"
+              : v === "daily"
+              ? "Daily Avg"
+              : "Monthly Avg"}
+          </button>
+        ))}
       </div>
 
       {/* Line Chart */}
-      <div className="bg-slate-900 p-6 rounded-2xl shadow-lg mb-10">
+      <motion.div
+        className="bg-slate-900 p-6 rounded-2xl shadow-lg mb-10"
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
         <h3 className="text-lg font-semibold text-amber-300 mb-4 text-center">
-          📈 Traffic Trends (Hourly)
+          📈 Traffic Trends ({view === "latest" ? "Hourly" : view})
         </h3>
         <ResponsiveContainer width="100%" height={320}>
-          <LineChart data={data}>
+          <LineChart data={filteredData}>
             <CartesianGrid strokeDasharray="3 3" stroke="#1f2937" />
             <XAxis
               dataKey="hour_start"
-              tickFormatter={(v) =>
-                new Date(v).toLocaleString("en-IN", {
-                  day: "2-digit",
-                  month: "short",
-                  hour: "numeric",
-                  hour12: true,
-                })
-              }
+              tickFormatter={(v) => {
+                const date = new Date(v);
+                return isNaN(date.getTime())
+                  ? v
+                  : date.toLocaleString("en-IN", {
+                      day: "2-digit",
+                      month: "short",
+                      hour: "numeric",
+                      hour12: true,
+                    });
+              }}
               tick={{ fill: "#9ca3af", fontSize: 11 }}
               angle={-15}
               textAnchor="end"
@@ -125,14 +200,19 @@ export default function TrafficPage() {
               stroke="#06b6d4"
               strokeWidth={2}
               dot={false}
-              name="Free Flow Avg (km/h)"
+              name="Free Flow Avg (%)"
             />
           </LineChart>
         </ResponsiveContainer>
-      </div>
+      </motion.div>
 
       {/* Bar Chart */}
-      <div className="bg-slate-900 p-6 rounded-2xl shadow-lg">
+      <motion.div
+        className="bg-slate-900 p-6 rounded-2xl shadow-lg"
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+      >
         <h3 className="text-lg font-semibold text-pink-400 mb-4 text-center">
           🚗 Top 10 Fastest Hours
         </h3>
@@ -141,14 +221,17 @@ export default function TrafficPage() {
             <CartesianGrid strokeDasharray="3 3" stroke="#1f2937" />
             <XAxis
               dataKey="hour_start"
-              tickFormatter={(v) =>
-                new Date(v).toLocaleString("en-IN", {
-                  day: "2-digit",
-                  month: "short",
-                  hour: "numeric",
-                  hour12: true,
-                })
-              }
+              tickFormatter={(v) => {
+                const date = new Date(v);
+                return isNaN(date.getTime())
+                  ? v
+                  : date.toLocaleString("en-IN", {
+                      day: "2-digit",
+                      month: "short",
+                      hour: "numeric",
+                      hour12: true,
+                    });
+              }}
               tick={{ fill: "#9ca3af", fontSize: 10 }}
               angle={-15}
               textAnchor="end"
@@ -158,7 +241,7 @@ export default function TrafficPage() {
             <Bar dataKey="avg_speed" fill="#f59e0b" radius={[6, 6, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
-      </div>
+      </motion.div>
 
       <footer className="text-center text-xs text-slate-500 mt-8">
         © {new Date().getFullYear()} UrbanPulse — Traffic Analytics

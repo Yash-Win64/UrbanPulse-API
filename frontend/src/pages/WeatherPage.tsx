@@ -1,26 +1,20 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   ResponsiveContainer,
-  LineChart,
-  Line,
+  AreaChart,
+  Area,
   CartesianGrid,
   XAxis,
   YAxis,
   Tooltip,
-  AreaChart,
-  Area,
   Legend,
-  BarChart,
-  Bar,
 } from "recharts";
 
 type HourlyWeather = {
   hour_start?: string;
-  avg_temp?: number;
-  avg_temperature?: number;
-  avg_humidity?: number;
-  avg_wind_speed?: number;
-  samples?: number;
+  avg_temp?: number | null;
+  avg_humidity?: number | null;
+  avg_wind_speed?: number | null;
 };
 
 const BASE_URL =
@@ -30,6 +24,7 @@ const BASE_URL =
 export default function WeatherPage() {
   const [data, setData] = useState<HourlyWeather[]>([]);
   const [loading, setLoading] = useState(true);
+  const [view, setView] = useState<"latest" | "week">("latest");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -40,15 +35,22 @@ export default function WeatherPage() {
         const normalized = arr
           .map((r) => ({
             hour_start: r.hour_start,
-            avg_temp: r.avg_temp ?? r.avg_temperature ?? null,
-            avg_humidity: r.avg_humidity ?? null,
-            avg_wind_speed: r.avg_wind_speed ?? null,
-            samples: r.samples ?? null,
+            avg_temp:
+              typeof r.avg_temp === "number"
+                ? r.avg_temp
+                : typeof r.avg_temperature === "number"
+                ? r.avg_temperature
+                : null,
+            avg_humidity:
+              typeof r.avg_humidity === "number" ? r.avg_humidity : null,
+            avg_wind_speed:
+              typeof r.avg_wind_speed === "number" ? r.avg_wind_speed : null,
           }))
           .filter((x) => x.hour_start)
           .sort(
             (a, b) =>
-              new Date(a.hour_start).getTime() - new Date(b.hour_start).getTime()
+              new Date(a.hour_start!).getTime() -
+              new Date(b.hour_start!).getTime()
           );
         setData(normalized);
       } catch (e) {
@@ -60,8 +62,60 @@ export default function WeatherPage() {
     fetchData();
   }, []);
 
+  const fmt = (v: any) =>
+    typeof v === "number" && !isNaN(v) ? v.toFixed(1) : "—";
   const latest = data.at(-1);
-  const fmt = (v: any) => (v ? v.toFixed(1) : "—");
+
+  // === Daily averages ===
+  const dailyAvg = (() => {
+    const grouped: Record<string, HourlyWeather[]> = {};
+    data.forEach((item) => {
+      const day = new Date(item.hour_start!).toISOString().split("T")[0];
+      if (!grouped[day]) grouped[day] = [];
+      grouped[day].push(item);
+    });
+    return Object.entries(grouped)
+      .map(([date, vals]) => ({
+        date,
+        avg_temp:
+          vals.reduce((a, b) => a + (b.avg_temp || 0), 0) / vals.length,
+        avg_humidity:
+          vals.reduce((a, b) => a + (b.avg_humidity || 0), 0) / vals.length,
+      }))
+      .sort(
+        (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
+      );
+  })();
+
+  // === Weekly averages ===
+  const weeklyAvg = (() => {
+    const grouped: Record<string, HourlyWeather[]> = {};
+    data.forEach((item) => {
+      const date = new Date(item.hour_start!);
+      const weekStart = new Date(date);
+      weekStart.setDate(date.getDate() - date.getDay());
+      const key = weekStart.toISOString().split("T")[0];
+      if (!grouped[key]) grouped[key] = [];
+      grouped[key].push(item);
+    });
+    return Object.entries(grouped)
+      .map(([week, vals]) => ({
+        week,
+        avg_temp:
+          vals.reduce((a, b) => a + (b.avg_temp || 0), 0) / vals.length,
+        avg_humidity:
+          vals.reduce((a, b) => a + (b.avg_humidity || 0), 0) / vals.length,
+      }))
+      .sort(
+        (a, b) => new Date(a.week).getTime() - new Date(b.week).getTime()
+      );
+  })();
+
+  // === View selection ===
+  const filteredData = view === "latest" ? data.slice(-10) : weeklyAvg;
+
+  const chartLabel =
+    view === "latest" ? "Latest Records" : "Weekly Averages";
 
   if (loading)
     return (
@@ -101,65 +155,51 @@ export default function WeatherPage() {
         </div>
       </div>
 
-      {/* Line Chart */}
-      <div className="bg-slate-900 p-6 rounded-2xl shadow-lg mb-10">
-        <h3 className="text-lg font-semibold text-amber-300 mb-4 text-center">
-          📈 Weather Trends (Hourly)
-        </h3>
-        <ResponsiveContainer width="100%" height={320}>
-          <LineChart data={data}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#1f2937" />
-            <XAxis
-              dataKey="hour_start"
-              tickFormatter={(v) =>
-                new Date(v).toLocaleString("en-IN", {
-                  day: "2-digit",
-                  month: "short",
-                  hour: "numeric",
-                  hour12: true,
-                })
-              }
-              tick={{ fill: "#9ca3af", fontSize: 11 }}
-              angle={-15}
-              textAnchor="end"
-            />
-            <YAxis tick={{ fill: "#9ca3af" }} />
-            <Tooltip />
-            <Legend />
-            <Line
-              dataKey="avg_temp"
-              stroke="#f59e0b"
-              strokeWidth={2}
-              dot={false}
-              name="Temperature (°C)"
-            />
-            <Line
-              dataKey="avg_humidity"
-              stroke="#06b6d4"
-              strokeWidth={2}
-              dot={false}
-              name="Humidity (%)"
-            />
-          </LineChart>
-        </ResponsiveContainer>
+      {/* Toggle Buttons */}
+      <div className="flex justify-center mb-6">
+        {["latest", "week"].map((option) => (
+          <button
+            key={option}
+            onClick={() => setView(option as any)}
+            className={`mx-2 px-5 py-2 rounded-full text-sm font-medium transition-all ${
+              view === option
+                ? "bg-amber-400 text-slate-900"
+                : "bg-slate-800 hover:bg-slate-700 text-slate-300"
+            }`}
+          >
+            {option === "latest" ? "Latest" : "Weekly"}
+          </button>
+        ))}
       </div>
 
-      {/* Bar Chart */}
-      <div className="bg-slate-900 p-6 rounded-2xl shadow-lg">
-        <h3 className="text-lg font-semibold text-pink-400 mb-4 text-center">
-          🌡️ Temperature Distribution (Top 10 Hours)
+      {/* Chart */}
+      <div className="bg-slate-900 p-6 rounded-2xl shadow-lg mb-10">
+        <h3 className="text-lg font-semibold text-amber-300 mb-4 text-center">
+          📈 Weather Trends — {chartLabel}
         </h3>
-        <ResponsiveContainer width="100%" height={250}>
-          <BarChart data={data.slice(-10)}>
+
+        <ResponsiveContainer width="100%" height={350}>
+          <AreaChart
+            data={filteredData}
+            margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+          >
+            <defs>
+              <linearGradient id="tempGradient" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor="#f59e0b" stopOpacity={0.8} />
+                <stop offset="95%" stopColor="#f59e0b" stopOpacity={0} />
+              </linearGradient>
+              <linearGradient id="humGradient" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor="#06b6d4" stopOpacity={0.8} />
+                <stop offset="95%" stopColor="#06b6d4" stopOpacity={0} />
+              </linearGradient>
+            </defs>
             <CartesianGrid strokeDasharray="3 3" stroke="#1f2937" />
             <XAxis
-              dataKey="hour_start"
+              dataKey={view === "latest" ? "hour_start" : "week"}
               tickFormatter={(v) =>
-                new Date(v).toLocaleString("en-IN", {
+                new Date(v).toLocaleDateString("en-IN", {
                   day: "2-digit",
                   month: "short",
-                  hour: "numeric",
-                  hour12: true,
                 })
               }
               tick={{ fill: "#9ca3af", fontSize: 10 }}
@@ -167,9 +207,31 @@ export default function WeatherPage() {
               textAnchor="end"
             />
             <YAxis tick={{ fill: "#9ca3af" }} />
-            <Tooltip />
-            <Bar dataKey="avg_temp" fill="#f59e0b" radius={[6, 6, 0, 0]} />
-          </BarChart>
+            <Tooltip
+              contentStyle={{
+                backgroundColor: "#1e293b",
+                border: "none",
+                borderRadius: "10px",
+              }}
+            />
+            <Legend />
+            <Area
+              type="monotone"
+              dataKey="avg_temp"
+              stroke="#f59e0b"
+              fillOpacity={1}
+              fill="url(#tempGradient)"
+              name="Temperature (°C)"
+            />
+            <Area
+              type="monotone"
+              dataKey="avg_humidity"
+              stroke="#06b6d4"
+              fillOpacity={1}
+              fill="url(#humGradient)"
+              name="Humidity (%)"
+            />
+          </AreaChart>
         </ResponsiveContainer>
       </div>
 
@@ -179,4 +241,6 @@ export default function WeatherPage() {
     </div>
   );
 }
+
+
 

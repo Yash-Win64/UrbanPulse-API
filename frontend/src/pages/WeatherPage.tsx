@@ -66,27 +66,6 @@ export default function WeatherPage() {
     typeof v === "number" && !isNaN(v) ? v.toFixed(1) : "—";
   const latest = data.at(-1);
 
-  // === Daily averages ===
-  const dailyAvg = (() => {
-    const grouped: Record<string, HourlyWeather[]> = {};
-    data.forEach((item) => {
-      const day = new Date(item.hour_start!).toISOString().split("T")[0];
-      if (!grouped[day]) grouped[day] = [];
-      grouped[day].push(item);
-    });
-    return Object.entries(grouped)
-      .map(([date, vals]) => ({
-        date,
-        avg_temp:
-          vals.reduce((a, b) => a + (b.avg_temp || 0), 0) / vals.length,
-        avg_humidity:
-          vals.reduce((a, b) => a + (b.avg_humidity || 0), 0) / vals.length,
-      }))
-      .sort(
-        (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
-      );
-  })();
-
   // === Weekly averages ===
   const weeklyAvg = (() => {
     const grouped: Record<string, HourlyWeather[]> = {};
@@ -241,6 +220,3 @@ export default function WeatherPage() {
     </div>
   );
 }
-
-
-
